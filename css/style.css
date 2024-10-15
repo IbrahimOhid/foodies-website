@@ -1,0 +1,683 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+ 
+}
+
+
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*===== Variable Define =====*/
+:root {
+  --primary-color: #A82C48;
+  --secondry-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: 'Poppins', sans-serif;
+  --secondry-font: 'Roboto', sans-serif;
+
+  /* background color */
+  --background-color: #FBEDCD;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+/*
+=========================================
+    Custom Scrollbar
+=========================================
+*/ 
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+} 
+::-webkit-scrollbar-track {
+  background: var(--white-color); 
+} 
+::-webkit-scrollbar-thumb {
+  background:var(--primary-color); 
+} 
+
+/*
+==========================================
+   Custom CSS Design
+==========================================
+*/
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: var(--secondry-color);
+  text-transform: capitalize;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  color: var(--secondry-color);
+  line-height: 3rem;
+
+
+}
+
+h4 {
+  color: var(--secondry-color);
+  font-family: var(--secondry-font);
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-family: var(--secondry-font);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-btn {
+  padding: 6px 10px;
+  background-color: var(--primary-color);
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: all .4s ease-out 0s;
+}
+
+.white-btn {
+  padding: 6px 10px;
+  background-color: transparent;
+  border: 0.1875rem solid var(--primary-color);
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.white-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+.wrapper {
+  padding-top: 3.25rem;
+  padding-bottom: 3.25rem;
+}
+
+.text-content {
+  width: 50%;
+  margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+  color: var(--white-color);
+}
+
+/*
+==========================================
+   Header Design
+==========================================
+*/
+.navigation-wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.navigation-wrap .nav-item{
+  padding: 0 0.625rem;
+  transition: all 200ms linear;
+}
+.navigation-wrap .navbar-brand img{
+  max-height: 40px;
+}
+
+.navbar-toggler:focus{
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+.navigation-wrap .nav-link{
+    font-size: 0.9375rem;
+    font-weight: 600;
+    text-decoration: capitalize;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+}
+
+.navigation-wrap .nav-item a:hover{
+    color: var(--secondry-color);
+}
+
+.navigation-wrap .main-btn{
+    padding: 0.3125rem 1.4375rem;
+    box-shadow: none;
+    margin-left: 0.625rem;
+}
+
+.cart-btn i{
+   color: var(--primary-color);
+   font-size: 40px;  
+}
+
+/* Change navbar styling on scroll */
+.navigation-wrap.scroll-on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+    transition: all 0.15s ease-in-out 0s;
+}
+
+/* Remove background color and border from dropdown menu */
+
+
+/* Optional: Style the dropdown items to match the navbar */
+.navigation-wrap .dropdown-item {
+  color: var(--primary-color); /* Adjust color as needed */
+}
+.navigation-wrap .dropdown-item :hover {
+  background-color: #f8f9fa; /* Optional: Change on hover */
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--secondary-color);
+}
+
+/* Specific styles for dropdown */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:active,
+.navbar-nav .nav-item.dropdown .nav-link:hover,
+.navbar-nav .nav-item.dropdown .nav-link:focus,
+.navbar-nav .nav-item.dropdown .nav-link:active {
+  color: var(--secondary-color);
+  background-color: transparent; /* Remove background color if any */
+  border: none; /* Remove border if any */
+}
+
+.navbar-nav .nav-item .fa-shopping-cart {
+  font-size: 20px;
+}
+
+
+/*
+==========================================
+   top-banner Design
+==========================================
+*/
+
+.top-banner {
+  width: 100%;
+  background: url('../images/bg/bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 12.875rem 0 9.375rem;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.top-banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-banner .row {
+  width: 100%;
+}
+
+.top-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.top-banner p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.order-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px ;
+}
+
+
+
+/*
+==========================================
+  counter Design
+==========================================
+*/
+ .counter-section{
+    background-color: var(--primary-color);
+    padding: 2.5rem 0;
+    
+ }
+ .counter-section p{
+    color: var(--white-color);
+    text-transform: uppercase;
+   
+
+ }
+
+/*
+==========================================
+ best-Selling section Design
+==========================================
+*/
+
+.best-Selling{
+    background-color: var(--background-color);
+    padding: 5rem 0;
+    align-items: center;
+
+}
+.breck-sec{
+height: 90px;
+width: 1px;
+background-color: #43121d; 
+margin-left: 60px;
+}
+/*
+==========================================
+ about page Design
+==========================================
+*/
+.about-details {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.about-details .about-text h2{
+
+  margin-bottom: 15px; 
+}
+.about-details ul li{
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 32px;
+  position: relative;
+  margin-left: 30px;
+}
+.about-details ul li::before{
+  position: absolute;
+  left: -2.1875rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-family: "Font Awesome 5 Free";
+  content: '\f00c';
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  
+}
+
+/*
+==========================================
+ about section Design
+==========================================
+*/
+
+.about-section .about-img img{
+  border-radius: 0.625rem;
+  height: 350px;
+  width:100%;
+}
+.about-section .about-text h2{
+  line-height: 25px;
+  margin-bottom: 15px; 
+}
+
+/*
+==========================================
+ food type section Design
+==========================================
+*/
+.food-type{
+  padding-top: 3.25rem;
+}
+.food-type ul li{
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 32px;
+  position: relative;
+  margin-left: 30px;
+}
+.food-type ul li::before{
+  position: absolute;
+  left: -2.1875rem;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  font-family: "Font Awesome 5 Free";
+  content: '\f00c';
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  
+}
+
+/*
+==========================================
+Story section Design
+==========================================
+*/
+.story{
+  width: 100%;
+  background: url('../images/bg/bg-2.jpg') no-repeat center;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.story .text-content h2 {
+  color: var(--primary-color);
+}
+
+
+
+/*
+==========================================
+ explore food section Design
+==========================================
+*/
+.explore-food .card {
+  border: none;
+  background-color: transparent;
+  border-radius: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.explore-food .card img {
+  border-radius: 0.9375rem;
+  object-fit: cover;
+  height: 200px;
+  
+}
+.explore-food .card h6 {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-color);
+
+}
+
+.explore-food .text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.explore-food .text-content p {
+  font-size: 1rem;
+}
+.explore-food .order-now-btn{
+  font-size: 12px;
+}
+
+/*
+==========================================
+ testimonial section Design
+==========================================
+*/
+.testimonial-section{
+  background-color: var(--primary-color);
+  padding-top: 30px;
+  padding-bottom: 60px;
+ 
+}
+.testimonial-section .carousel-item{
+  margin: 1rem 0;
+  padding: 10rem 3.125rem;
+  background-color: var(--white-color);
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+.testimonial-section .carousel-caption img{
+  max-width: 5rem;
+  border-radius: 50%;
+  padding: 0.3125rem;
+  object-fit: cover;
+}
+
+.testimonial-section .carousel-item .carousel-caption p{
+  font-size: 1.3125rem;
+  line-height: 2.0625rem;
+  padding: 0 11% 0.625rem;
+}
+
+.testimonial-section .carousel-indicators{
+  bottom: -2.125rem;
+}
+.testimonial-section .carousel-indicators button{
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin-right: 1rem;
+  opacity: 0.3;
+
+}
+.testimonial-section .carousel-indicators button.active{
+  opacity: 1;
+
+}
+
+/*
+==========================================
+FAQ section Design
+==========================================
+*/
+
+.accordion-button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  font-weight: bold;
+  padding: 1rem 0;
+  font-size: 24px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for focus state */
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-item {
+  border: none;
+  overflow: hidden; 
+}
+
+.accordion-body {
+  padding: 1rem 0;
+  font-size: 16px;
+  width: 80%;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed),
+.accordion-button:focus-visible {
+  box-shadow: none;
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
+h4.accordion-header {
+  font-size: 16px;
+  margin-bottom: 0;
+  width: 80%;
+}
+
+h4.accordion-header button {
+  width: 100%;
+  text-align: left;
+  padding-left: 0;
+  font-size: 20px;
+}
+h4.accordion-header button i {
+  text-align: center;
+  align-items: center;
+}
+
+
+
+/* Additional styles for the icons */
+.accordion-button .fa-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) .fa-chevron-down {
+  transform: rotate(180deg); /* Rotate icon when expanded */
+}
+
+
+/* book food */
+.book-food{
+  width: 100%;
+  background: url(../images/bg/bg-3.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 71.9125px;
+  padding: 4.375rem 0;
+}
+
+/* Form Control */
+.newslettar{
+ padding: 50px 0;
+
+}
+.newslettar .newsletter-form{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.newsletter-form .main-btn {
+  flex-shrink: 0;
+  margin-left: 10px;
+} 
+.newsletter-form .form-control{
+  flex: 1;
+  min-width: 0;
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  width:100%;
+  border:none;
+  border-radius: 0;
+  background:transparent;
+  border:0.1875rem solid var(--primary-color);
+  color:var(--black-color);
+}
+.newsletter-form .form-control:hover,
+.newsletter-form .form-control:focus{
+  outline:none;
+  box-shadow: none;
+  border-color:var(--primary-color);
+}
+
+
+/*
+==========================================
+footer section Design
+==========================================
+*/
+.footer{
+  background: var(--primary-color);
+}
+.footer .footer-link{
+  font-size: 1rem;
+  color: var(--white-color);
+  padding: 0 1.875rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer .footer-link:hover{
+  color: var(--secondry-color);
+}   
+ .footer a i{
+   font-size: 1.5rem;
+   color: var(--white-color);
+   padding: 0 1rem;
+   transition: transform 0.3s ease;
+  }
+  .footer a i:hover {
+    transform: translateY(-5px) scale(1.3); 
+}
+
+

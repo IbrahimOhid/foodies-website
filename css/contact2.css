@@ -1,0 +1,126 @@
+.card { 
+  border: 1px solid var(--primary-color);
+}
+
+.contact-details {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 80px 60px;
+  overflow: hidden;
+}
+
+.contact-details h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  
+}
+
+.contact-details p, 
+.contact-details li, 
+.contact-details i, 
+.contact-details span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.contact-details ul li {
+  position: relative;
+  padding-left: 50px; /* Adjust padding to create space for icons */
+  margin-bottom: 15px; /* Add margin for spacing */
+}
+
+.contact-details ul li i {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid #ccc;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: white;
+  background-color: var(--primary-color);
+  z-index: 1;
+}
+
+#contact .icon-section {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 80px;
+  color: white;
+}
+
+#contact .icon-section a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background-color: #fff;
+  color: var(--primary-color);
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+}
+
+#contact .icon-section a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.contact-form {
+  padding: 80px 60px;
+  color: var(--primary-color);
+}
+
+.contact-form h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.contact-form .form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form .form-group input {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  padding: 10px 10px;
+}
+
+.contact-form .form-group input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+.contact-form .form-group textarea {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.contact-form .form-group textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--primary-color);
+}
+
+.contact-btn {
+  padding: 3px 5px;
+  font-size: 14px;
+}

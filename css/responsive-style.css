@@ -1,0 +1,702 @@
+/* <!--===============
+Responsive Design===
+==============--> */
+@media (max-width: 1024px) {
+  /* explor-food section */
+  .explore-food .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+.explore-food .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.explore-food .text-content h2 {
+    font-size: 2.25rem;
+}
+.explore-food .text-content p {
+    font-size: 1.125rem;
+}
+.explore-food .card img {
+    height: 200px;
+}
+
+
+/* about page */
+.about-text h2, .text-section h2 {
+  font-size: 2rem;
+}
+.about-text p, .text-section p {
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 991px) {
+  /*custom classes  */
+  .text-content {
+    width: 100%;
+  }
+  /* navbar brand */
+  .navigation-wrap .navbar-brand img {
+    height: 3.8125rem;
+  }
+  .navigation-wrap {
+    text-align: center;
+    background-color: var(--white-color);
+  }
+  .navigation-wrap .nav-link {
+    line-height: 1.875rem;
+  }
+  /* Banner Design */
+  .top-banner {
+    padding: 9.375rem 0 9.375rem;
+  }
+  .order-button {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  /* carousel design */
+  .testimonial-section .carousel-item .carousel-caption p {
+    padding: 0;
+  }
+  /* best-Selling section Design */
+
+  .best-Selling .breck-sec {
+    margin-right: 50px;
+  }
+  .best-Selling h2 {
+    line-height: 3rem;
+  }
+  /* expor food section */
+  .explore-food .col-md-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+  .explore-food .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .explore-food .text-content h2 {
+    font-size: 2rem;
+  }
+  .explore-food .text-content p {
+    font-size: 1rem;
+  }
+  .explore-food .card img {
+    height: 200px;
+  }
+/* about section */
+.about-section .food-type{
+  padding-top: 1.25rem;
+}
+.about-section{
+  margin-bottom: 50px;
+}
+.about-section.text-section h2 {
+  font-size: 1.75rem;
+  line-height: 35px;
+  margin-top: 15px;
+}
+  /* about page */
+  .about-text h2, .text-section h2 {
+    font-size: 1.75rem;
+}
+.about-text p, .text-section p {
+    font-size: 0.875rem;
+}
+.about-details ul li{
+  font-size: 0.875rem;
+}
+/* food details page */
+.food-detaills-head {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.food-detaills-head .col-lg-5 {
+  order: 1;
+}
+
+.food-detaills-head .col-lg-7 {
+  order: 2;
+  padding-top: 20px; /* Add some spacing between image and text */
+}
+}
+/* mobail screen */
+@media only screen and (max-width: 767px) {
+  /* custom css */
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  /* top banner */
+  .top-banner {
+    padding: 6rem 0 4rem;
+  }
+
+  .top-banner h1 {
+    font-size: 2rem;
+  }
+
+  .top-banner p {
+    font-size: 0.9rem;
+  }
+
+  /* story section */
+  .story-section {
+    padding: 3rem 0;
+    height: auto;
+  }
+  .story-section .text-content h2 {
+    font-size: 2rem;
+    line-height: 32px;
+  }
+  .story-section .text-content p {
+    font-size: 1rem;
+  }
+  .story .main-btn {
+    display: inline-block;
+  }
+  /* best selling */
+.best-Selling {
+  padding: 3rem 0;
+}
+  /* carousel design */
+  .testimonial-section .carousel-item {
+    padding: 11rem 3.125rem;
+  }
+
+  /* food explor */
+  #explore-food .wrapper{
+    padding: 2rem 0;
+  }
+  .explore-food .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .explore-food .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .explore-food .text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .explore-food .text-content p {
+    font-size: 0.875rem;
+  }
+  .explore-food .card img {
+    height: 150px;
+  }
+  /* newslettar */
+  .newsletter-form .form-control {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+
+  .newsletter-form .main-btn {
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /* FAQ section */
+  .accordion-body {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  h4.accordion-header {
+    width: 100%;
+  }
+
+  .faq-section h2 {
+    text-align: left;
+  }
+  h4.accordion-header button {
+    width: 100%;
+    font-size: 14px;
+  }
+  /* about section */
+.about-section .food-type{
+  padding-top: 1.25rem;
+}
+.about-section{
+  margin-bottom: 50px;
+}
+.about-section .text-section h2 {
+  font-size: 1.75rem;
+
+}
+  /* add cart section */
+  .cart-totals {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+  }
+
+  .totals-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .totals-label, .totals-value {
+    text-align: center;
+    width: 100%;
+  }
+
+  .checkout-button {
+    text-align: center;
+  }
+  /* add cart css */
+
+  .cart-table-container {
+    overflow-x: auto;
+  }
+
+  .cart-item-quantity {
+    flex-direction: column;
+  }
+
+  .coupon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coupon input {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .coupon .main-btn {
+    align-items: end;
+  }
+
+  .cart-totals {
+    margin-top: 20px;
+  }
+  /* footer link */
+  .footer .footer-link,
+  .footer a i {
+    padding: 0 0.7rem;
+  }
+  .accordion-button:focus,
+  .accordion-button:not(.collapsed),
+  .accordion-button:focus-visible {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  /* food details page */
+
+  /* about page */
+  .about-text h2, .text-section h2 {
+    font-size: 1.75rem;
+}
+.about-text p, .text-section p {
+    font-size: 0.875rem;
+}
+.about-details ul li{
+  font-size: 0.875rem;
+}
+  /* contact page  */
+  .contact-details,
+  .contact-form {
+    padding: 40px 30px;
+  }
+
+  .contact-details ul {
+    padding-left: 0;
+  }
+
+  .contact-details li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-details .icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+
+  .contact-form h3,
+  .contact-details h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form .form-control {
+    font-size: 1rem;
+  }
+
+  .contact .main-btn {
+    font-size: 1rem;
+  }
+
+  /* food details page */
+  .food-details-head {
+    flex-direction: column-reverse;
+  }
+
+  .order-md-0 {
+    order: 1;
+  }
+
+  .order-md-1 {
+    order: 0;
+  }
+  #recommended-food .wrapper{
+    padding: 0;
+  }
+}
+@media (max-width: 576px) {
+  /* tp bannner */
+  .top-banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .top-banner p {
+    font-size: 0.8rem;
+  }
+
+  .cart-item-quantity {
+    flex-direction: column;
+  }
+
+  .cart-item-quantity button {
+    margin-top: 5px;
+  }
+  .form-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-bottom a {
+    margin-bottom: 10px;
+  }
+
+  /* story section */
+  .story .text-content h2 {
+    font-size: 1.5rem;
+    line-height: 35px;
+  }
+  .story .text-content p {
+    font-size: 0.875rem;
+  }
+  .story .main-btn {
+    display: inline-block;
+  }
+/* best selling */
+.best-Selling {
+  padding: 3rem 0;
+}
+
+  /* food explor */
+  #explore-food .wrapper{
+    padding: 2rem 0;
+  }
+  .explore-food .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .explore-food .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .explore-food .text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  .explore-food .text-content p {
+    font-size: 0.875rem;
+  }
+  .explore-food .card img {
+    height: 150px;
+  }
+  /* about section */
+.about-section .food-type{
+  padding-top: 1.25rem;
+}
+.about-section{
+  margin-bottom: 50px;
+}
+.about-section .text-section h2 {
+  font-size: 1.75rem;
+;
+}
+  /*  newsletter section */
+  .newsletter-form .form-control {
+    font-size: 0.75rem;
+    padding: 0.4rem;
+  }
+
+  .newsletter-form .main-btn {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+  /* about page */
+  .about-text h2, .text-section h2 {
+    font-size: 1.75rem;
+}
+.about-text p, .text-section p {
+    font-size: 0.875rem;
+}
+.about-details ul li{
+  font-size: 0.875rem;
+}
+
+  /* contact page  */
+  .contact-details,
+  .contact-form {
+    padding: 20px 15px;
+  }
+
+  .contact-details ul {
+    padding-left: 0;
+  }
+
+  .contact-details li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-details .icon {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+
+  .contact-form h3,
+  .contact-details h3 {
+    font-size: 1.25rem;
+  }
+
+  .contact-form .form-control {
+    font-size: 0.875rem;
+  }
+
+  .contact .main-btn {
+    font-size: 0.875rem;
+  }
+
+  /* food detais page */
+  .tab-content .tab-pane {
+    padding: 10px;
+  }
+
+  .tab-content .tab-pane p {
+    font-size: 0.875rem;
+  }
+
+  .tabsul {
+    font-size: 0.875rem;
+  }
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section p {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  .breadcrumb {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
+
+  .breadcrumb-item a {
+    padding: 0 5px;
+  }
+  .food-detaills-head {
+    flex-direction: column-reverse;
+  }
+
+  .food-detaills-head .col-lg-5 {
+    order: 1;
+  }
+
+  .food-detaills-head .col-lg-7 {
+    order: 2;
+    padding-top: 15px; /* Adjust padding for smaller screens */
+  }
+ #recommended-food .wrapper{
+    padding: 0;
+  }
+
+  /* add cart section */
+  .cart-table th,
+  .cart-table td {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .cart-item-quantity {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coupon input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .cart-totals {
+    padding: 15px;
+  }
+
+  .totals-row {
+    padding: 15px 0;
+  }
+}
+/* Extra small mobile phones */
+@media (max-width: 330px) {
+  /* carousel design */
+  .testimonial-section .carousel-item {
+    padding: 13rem 3.125rem;
+  }
+  .top-banner h1 {
+    font-size: 2rem;
+  }
+  .top-banner .white-btn {
+    display: inline-block;
+  }
+
+  /* best selling */
+  .best-Selling {
+    text-align: center;
+    padding: 3rem 0;
+  }
+
+  /* FAQ section */
+  .faq-section h2 {
+    text-align: left;
+  }
+  .accordion-body {
+    width: 100%;
+    font-size: 12px;
+  }
+  h4.accordion-header {
+    width: 100%;
+  }
+
+  h4.accordion-header button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  h4.accordion-header button i {
+    align-items: start;
+    text-align: start;
+  }
+  .accordion-button:focus,
+  .accordion-button:not(.collapsed),
+  .accordion-button:focus-visible {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  /* about section */
+.about-section .food-type{
+  padding-top: 1.25rem;
+}
+.about-section{
+  margin-bottom: 50px;
+}
+.about-section .text-section h2 {
+  font-size: 1.75rem;
+
+}
+
+  /* newsletter section */
+  .newsletter-form .form-control {
+    font-size: 0.625rem;
+    padding: 0.3rem;
+  }
+
+  .newsletter-form .main-btn {
+    font-size: 0.625rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* explor-food */
+  #explore-food .wrapper{
+    padding: 2rem 0;
+  }
+  .explore-food .col-12,
+  .explore-food .col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .explore-food .card img {
+    height: 150px;
+  }
+
+
+  /* about page */
+  .about-text h2, .text-section h2 {
+    font-size: 1.75rem;
+}
+.about-text p, .text-section p {
+    font-size: 0.875rem;
+}
+.about-details ul li{
+  font-size: 0.875rem;
+}
+
+
+  /* add cart css */
+
+  .coupon input {
+    width: 50%;
+  }
+
+  .coupon-btn {
+    padding: 8px 10px;
+    max-width: 50%;
+  }
+  /* contact details */
+  .contact-details,
+  .contact-form {
+    padding: 10px 5px;
+  }
+
+  .contact-details ul {
+    padding-left: 0;
+  }
+
+  .contact-details li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .contact-details .icon {
+    margin-right: 10px;
+    font-size: 0.875rem;
+  }
+
+  .contact-form h3,
+  .contact-details h3 {
+    font-size: 1.1rem;
+  }
+
+  .contact-form .form-control {
+    font-size: 0.75rem;
+  }
+
+  .contact .main-btn {
+    font-size: 0.75rem;
+  }
+
+  /* food details page */
+  #recommended-food .wrapper{
+    padding: 0;
+  }
+  #recommended-food .text-section{
+    padding: 0;
+  }
+
+}

@@ -1,0 +1,96 @@
+.cart-section{
+    padding: 100px 0;
+    color: var(--text-color);
+    }
+/* .form-content label{
+    line-height: 2;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+
+}
+.form-content input{
+    height: 45px;
+    padding: 10px 18px;
+    background: none;
+    border: 1px solid rgba(54, 54, 54, 0.1);
+    width: 100%;
+    margin: 0;
+    outline: none;
+    line-height: normal;
+    border-radius: unset;
+} */
+.cart-section input:focus{
+    outline:none;
+    box-shadow: none;
+    border-color:var(--primary-color);
+}
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.form-control-mod {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.district-input {
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+ .form-content-box .form-group textarea {
+    height: 60px;
+    min-height: 60px;
+    line-height: 1.5;
+    display: block;
+    box-shadow: none;
+    width: 100%;
+    padding: 10px 18px;
+    background: none;
+    border: 1px solid rgba(54, 54, 54, 0.1);
+    margin: 0;
+    outline: none;
+}
+.review-order .heading{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.product-total {
+    margin-left: 20px;
+}
+
+.cart-subtotal th{
+    padding-right: 30px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+.order-total th{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.checkout-btn{
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}

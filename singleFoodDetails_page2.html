@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <title>Single Food Details</title>
+    <!-- bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+    <link rel="stylesheet" href="css/food-details2.css" />
+  </head>
+
+  <body>
+    <!-- header design -->
+    <header>
+      <nav class="navbar navbar-expand-lg navigation-wrap">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img decoding="async" src="images/logo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#explore-food"
+                  id="exploreFoodDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore Foods
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="exploreFoodDropdown">
+                  <li>
+                    <a class="dropdown-item" href="singleFoodDetails.html"
+                      >Single Food Details</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#add-cart">Add to Cart</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#checkout">Check Out</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li>
+                <button class="main-btn">
+                  <a href="login.html" class="login-btn">Login</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cart">
+                  <i class="fas fa-shopping-cart"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- section-3 food-details-->
+    <section id="food-details">
+      <div class="food-details wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-12 mt-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Expolre Food
+                  </li>
+                  <li class="breadcrumb-item active" aria-current="page">
+                    Vegitable Burge
+                  </li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+          <div class="row align-items-center food-detaills-head">
+            <div class="col-lg-5 col-md-12 mb-lg-0">
+              <div class="card">
+                <img
+                  src="images/img/img-4.jpg"
+                  alt="about img"
+                  class="food-img"
+                />
+              </div>
+              <div class="d-flex gap-3 mt-3">
+                <img
+                  src="images/img/burger1.jpg"
+                  alt="burger"
+                  class="card-img-bottom"
+                />
+                <img
+                  src="images/img/burger2.jpg"
+                  alt="burger"
+                  class="card-img-bottom"
+                />
+                <img
+                  src="images/img/burger3.jpg"
+                  alt="burger"
+                  class="card-img-bottom"
+                />
+              </div>
+            </div>
+
+            <div class="col-lg-7 col-md-12 text-section">
+              <h2>Vegitable Burger</h2>
+              <p>
+                These homemade veggie burgers take longer to prepare than
+                regular burgers, but they are worth it (trust me). See our easy
+                black bean burgers if you want a quick plant-based burger patty!
+              </p>
+
+              <h5 class="mt-5">Price: <span>$ 33.00</span></h5>
+
+              <div class="quantity-area d-flex gap-4 mt-4">
+                <div class="cart-edit">
+                  <div class="quantity-edit">
+                    <button class="button">-</button>
+                    <input type="text" class="input" value="3" />
+                    <button class="button plus">+</button>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="main-btn justify-content-center align-content-center"
+                  >Add to cart</a
+                >
+              </div>
+
+              <div class="d-flex gap-4 mt-5 mb-2">
+                <div class="">
+                  <div class="star-rating">
+                    <span class="fa fa-star checked" data-rating="1"></span>
+                    <span class="fa fa-star checked" data-rating="2"></span>
+                    <span class="fa fa-star checked" data-rating="3"></span>
+                    <span class="fa fa-star checked" data-rating="4"></span>
+                    <span class="fa fa-star" data-rating="5"></span>
+                  </div>
+                  <input type="hidden" name="rating" id="rating-value" />
+                </div>
+                <div class="">
+                  <p>(1 customer review)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- description -->
+          <div class="disciption-section">
+            <div class="row mb-3">
+              <div class="col-12" id="tabs">
+                <nav>
+                  <div
+                    class="nav nav-tabs nav-fill"
+                    id="nav-tab"
+                    role="tablist"
+                  >
+                    <a
+                      class="nav-item nav-link active mb-2"
+                      id="nav-description-tab"
+                      data-toggle="tab"
+                      href="#nav-description"
+                      role="tab"
+                      aria-controls="nav-description"
+                      aria-selected="true"
+                      >Description</a
+                    >
+
+                    <a
+                      class="nav-item nav-link mb-2"
+                      id="nav-reviews-tab"
+                      data-toggle="tab"
+                      href="#nav-review"
+                      role="tab"
+                      aria-controls="nav-review"
+                      aria-selected="false"
+                      >Reviews</a
+                    >
+
+                    <a
+                      class="nav-item nav-link mb-2"
+                      id="nav-add-tab"
+                      data-toggle="tab"
+                      href="#nav-add"
+                      role="tab"
+                      aria-controls="nav-add"
+                      aria-selected="false"
+                      >Additional information</a
+                    >
+                  </div>
+                </nav>
+                <div class="tab-content">
+                  <div
+                    class="tab-pane fade active show"
+                    id="nav-description"
+                    role="tabpanel"
+                  >
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p>
+                          Curabitur finibus ante vitae fringilla varius. Quisque
+                          porta mattis mauris eu auctor. Duis varius non lorem a
+                          pulvinar. Vivamus cursus felis pellentesque lectus
+                          gravida hendrerit. Cras commodo vestibulum magna a
+                          dictum. Vivamus eget aliquet ipsum. Suspendisse
+                          scelerisque a est quis molestie. In congue eget nibh
+                          et accumsan. Maecenas mattis erat a luctus hendrerit.
+                          Vivamus et viverra felis, vitae tempor leo.
+                        </p>
+                        <ul class="tabsul">
+                          <p class="d-flex gap-2">
+                            Weight: <span class="fw-bold">345g</span>
+                          </p>
+                          <p class="d-flex gap-2">
+                            Ingridients:
+                            <span class="fw-bold"
+                              >Duis vitae justo tempor, vulputate libero sit
+                              amet, lacinia nulla. Fusce eu turpis quis
+                            </span>
+                          </p>
+                        </ul>
+                        <p>
+                          Aenean efficitur mauris ex, id rhoncus sapien eleifend
+                          eget. Aliquam sit amet ultrices metus. Etiam at purus
+                          nulla. Morbi ut mauris eros. Sed augue diam, lacinia
+                          in dictum id, fermentum consequat nunc. Nam elementum
+                          arcu ipsum, id sodales ante vehicula ac. Donec
+                          interdum ornare blandit. Aliquam erat volutpat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-review" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-10 offset-md-1">
+                        <div class="comments">
+                          <div class="row mb-1half no-gutters comment">
+                            <div class="col-auto pr-2">
+                              <img src="images/review/review-1.jpg" alt="." />
+                            </div>
+                            <div class="col">
+                              <span class="name">Polina Podolski</span>
+                              <span class="date">26 Sep 2020</span>
+                              <span class="reply ms-3">
+                                <span
+                                  class="fa fa-star checked"
+                                  data-rating="1"
+                                ></span>
+                                <span
+                                  class="fa fa-star checked"
+                                  data-rating="2"
+                                ></span>
+                                <span
+                                  class="fa fa-star checked"
+                                  data-rating="3"
+                                ></span>
+                                <span
+                                  class="fa fa-star checked"
+                                  data-rating="4"
+                                ></span>
+                                <span class="fa fa-star" data-rating="5"></span>
+                              </span>
+                              <p>
+                                Vestibulum sagittis porta rhoncus. Sed augue
+                                erat, tempus a tincidunt eget, dapibus eget
+                                sapien. Aliquam aliquet neque quam, a imperdiet
+                                nisi sagittis bibendum.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="row ps-5 no-gutters comment mt-5">
+                            <div class="col-auto pr-2">
+                              <img src="images/review/review-2.jpg" alt="." />
+                            </div>
+                            <div class="col">
+                              <span class="name">Polina Podolski</span>
+                              <span class="date">26 Sep 2020</span>
+                              <span class="reply ms-3">
+                                <span
+                                  class="fa fa-star checked"
+                                  data-rating="1"
+                                ></span>
+                                <span
+                                  class="fa fa-star checked"
+                                  data-rating="2"
+                                ></span>
+                                <span
+                                  class="fa fa-star checked"
+                                  data-rating="3"
+                                ></span>
+                                <span
+                                  class="fa fa-star checked"
+                                  data-rating="4"
+                                ></span>
+                                <span class="fa fa-star" data-rating="5"></span>
+                              </span>
+                              <p>
+                                Vestibulum sagittis porta rhoncus. Sed augue
+                                erat, tempus a tincidunt eget, dapibus eget
+                                sapien. Aliquam aliquet neque quam, a imperdiet
+                                nisi sagittis bibendum.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-add" role="tabpanel">
+                    <div class="row">
+                      <div class="col-md-10 offset-md-1">
+                        Curabitur finibus ante vitae fringilla varius. Quisque
+                        porta mattis mauris eu auctor. Duis varius non lorem a
+                        pulvinar. Vivamus cursus felis pellentesque lectus
+                        gravida hendrerit. Cras commodo vestibulum magna a
+                        dictum. Vivamus eget aliquet ipsum. Suspendisse
+                        scelerisque a est quis molestie. In congue eget nibh et
+                        accumsan. Maecenas mattis erat a luctus hendrerit.
+                        Vivamus et viverra felis, vitae tempor leo. Curabitur
+                        finibus ante vitae fringilla varius. Quisque porta
+                        mattis mauris eu auctor. Duis varius non lorem a
+                        pulvinar. Vivamus cursus felis pellentesque lectus
+                        gravida hendrerit. Cras commodo vestibulum magna a
+                        dictum. Vivamus eget aliquet ipsum. Suspendisse
+                        scelerisque a est quis molestie. In congue eget nibh et
+                        accumsan. Maecenas mattis erat a luctus hendrerit.
+                        Vivamus et viverra felis, vitae tempor leo.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- related product card -->
+    <section id="explore-food">
+      <div class="explore-food wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="text-content text-center">
+                <h2 class="recommended">RECOMMENDED</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+              <div class="card">
+                <img
+                  src="images/img/img-6.jpg"
+                  alt="explore food"
+                  class="img-fluid"
+                />
+                <div class="pt-3">
+                  <h4>Red Velvet & Cream Cheese ( 500g )</h4>
+                  <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                  <span>$100.20 <del>$116.80</del></span>
+                  <button class="main-btn m-2">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+              <div class="card">
+                <img
+                  src="images/img/img-3.jpg"
+                  alt="explore food"
+                  class="img-fluid"
+                />
+                <div class="pt-3">
+                  <h4>Rainbow Vegitable Sandwich</h4>
+                  <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                  <span>$20.20 <del>$21.80</del></span>
+                  <button class="main-btn m-2">Order Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+              <div class="card">
+                <img
+                  src="images/img/img-7.jpg"
+                  alt="explore food"
+                  class="img-fluid"
+                />
+                <div class="pt-3">
+                  <h4>This oven-baked Pizza</h4>
+                  <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                  <span>$20.20 <del>$21.80</del></span>
+                  <button class="main-btn m-2">Order Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+              <div class="card">
+                <img
+                  src="images/img/img-8.jpg"
+                  alt="explore food"
+                  class="img-fluid"
+                />
+                <div class="pt-3">
+                  <h4>This oven-baked Pasta</h4>
+                  <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                  <span>$20.20 <del>$21.80</del></span>
+                  <button class="main-btn m-2">Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section-5 testimonial-->
+    <section id="testimonial">
+      <div class="testimonial-section wrapper">
+        <div class="container text-center">
+          <div class="text-content pb-4">
+            <h2>Testimonial</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 col-lg-10 offset-lg-1">
+              <div
+                id="carouselExampleDark"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption">
+                      <img decoding="async" src="images/review/review-1.jpg" />
+                      <p>
+                        "Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts. "
+                      </p>
+                      <h5>Johnthan Doe - UX Designer</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img decoding="async" src="images/review/review-2.jpg" />
+                      <p>
+                        "Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts. "
+                      </p>
+                      <h5>Maccy Doe - Front End</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <img decoding="async" src="images/review/review-1.jpg" />
+                      <p>
+                        "Far far away, behind the word mountains, far from the
+                        countries Vokalia and Consonantia, there live the blind
+                        texts. "
+                      </p>
+                      <h5>Johnthan Doe - UX Designer</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-8 newslettar-->
+    <section id="newslettar">
+      <div class="newslettar wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="sol-sm-12">
+              <div class="text-content text-center pb-4">
+                <h2>Hurry up! Subscribe our newsletter and get 25% Off</h2>
+                <p>
+                  Limited time offer for this month. No credit card required.
+                </p>
+              </div>
+              <form class="newsletter">
+                <div class="row d-flex">
+                  <div class="col-md-11 col-12 mb-2">
+                    <input
+                      class="form-control"
+                      placeholder="Email Address here"
+                      name="email"
+                      type="email"
+                    />
+                  </div>
+                  <div class="col-md-1 col-12 text-center">
+                    <button class="main-btn" type="submit">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-9 footer-->
+    <footer id="footer">
+      <div class="footer py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a class="footer-link" href="#">Register</a>
+              <a class="footer-link" href="#">Forum</a>
+              <a class="footer-link" href="#">Affiliate</a>
+              <a class="footer-link" href="#">FAQ</a>
+              <div class="footer-social pt-4 text-center">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="footer-copy">
+                <div class="copy-right text-center pt-5">
+                  <p class="text-light">
+                    © 2021. Foodies. All rights reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS Libraries -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <!-- own js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

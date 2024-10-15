@@ -1,0 +1,154 @@
+.cart-section{
+    padding: 100px 0;
+}
+
+
+.cart-table {
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    text-align: end;
+  }
+  
+  .btn-remove {
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .cart-item-image img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  
+  .cart-item-details {
+    text-align: end;
+  }
+  
+  .cart-item-title {
+    font-weight: bold;
+  }
+  
+  .cart-item-quantity {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  
+  .cart-item-quantity button,
+  .cart-item-quantity input {
+    margin: 0;
+    height: 30px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .cart-item-quantity button {
+    width: 30px;
+    font-size: 18px;
+    background: none;
+    cursor: pointer;
+  }
+  
+
+
+  .totals-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .totals-label {
+    font-weight: bold;
+  }
+  
+  .checkout-button {
+    margin-top: 20px;
+    text-align: right;
+  }
+.cart-totals h3{
+    text-align: left;
+    padding: 10px 0;
+    color: var(--primary-color);
+}
+    .coupon input{
+      width: 30%;
+      padding: 11px;
+      border: 1px solid #ccc;
+      outline: none; 
+    }
+    .mt-4 {
+      margin-top: 1.5rem;
+    }
+    
+    .cart-section {
+      padding: 20px 0;
+    }
+    
+    .cart-content {
+      margin-bottom: 20px;
+    }
+    
+    .cart-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    .cart-table th, .cart-table td {
+      padding: 6px;
+      text-align: center;
+    }
+    
+    .cart-item-image img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .cart-item-quantity {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .cart-item-quantity input {
+      width: 50px;
+      text-align: center;
+    }
+    
+
+    .btn-remove:hover, .btn-decrease:hover, .btn-increase:hover, .main-btn:hover {
+      opacity: 0.8;
+    }
+    
+  
+    .coupon input {
+      width: calc(100% - 110px);
+      max-width: 300px;
+      padding: 6px 10px;
+      border: 1px solid #ccc;
+      outline: none; 
+      box-sizing: border-box;
+    }
+    
+   
+    .cart-totals {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    
+    .totals-row {
+      display: flex;
+      justify-content: space-between;
+    
+    }
+    
+    .checkout-button {
+      text-align: right;
+    }
+    

@@ -1,0 +1,92 @@
+:root {
+  --primary-color: #A82C48;
+  --secondry-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --black-color: #000;
+  --primary-font: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+
+ color: var(--text-color);
+}
+.register-form{
+  background: url('../images/bg/resgister1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  padding: 80px 0;
+ 
+
+
+}
+.login-form{
+  background: url('../images/bg/resgister1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+ 
+
+}
+.card {
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  box-shadow: 4px 6px 18px rgba(255, 255, 255, 0.6);
+ 
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.form-label {
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.form-control { 
+  border-radius: 5px;
+  background: var(--white-color);
+  outline: none;
+}
+
+.form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  font-weight: 500;
+  padding: 8px 10px;
+}
+
+.btn-primary:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+.form-bottom p{
+  color: var(--white-color);
+  font-size: 1rem;
+  
+}
+.form-bottom .text-danger{
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+.form-bottom p {
+  margin-bottom: 0;
+}
+a{
+  color: var(--primary-color);
+}
